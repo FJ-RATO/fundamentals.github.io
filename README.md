@@ -1,4 +1,3 @@
-![fundamentals.logo](https://logodix.com/logo/760384.png)
 # [Fundamentals](https://fj-rato.github.io/fundamentals.github.io/)
 > "Not just the fundamentals"
 
