@@ -1,4 +1,36 @@
 body{
-    background-color: #23272a;
-    overflow: hidden;
+    background-color: #550385;
+    transition: background-color 0.5s;
+    /* overflow: hidden; */
 }
+
+.front{
+    height: 100%;
+    /* background-color: #550385; */
+}
+
+.container{
+    height: 75%;
+    margin-top: 15%;
+    /* background-color: blueviolet; */
+}
+
+/* #EXPERIENCE{
+    background-color: #47026F;
+}
+
+#EDUCATION{
+    background-color: #390259;
+}
+
+#SKILLS{
+    background-color: #2B0144;
+}
+
+#INTERESTS{
+    background-color: #1D012E;
+}
+
+#CONTACT{
+    background-color: #0F0018;
+} */
