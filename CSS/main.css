@@ -6,6 +6,7 @@ body{
 
 .front{
     height: 100%;
+    background-image: url("./../assets/front.gif");
 }
 
 .container{
