@@ -5,6 +5,8 @@ const sectionFour = document.querySelector('#SKILLS');
 const sectionFive = document.querySelector('#INTERESTS');
 const sectionSix = document.querySelector('#CONTACT');
 
+const nav_side = document.querySelector('.nav_right');
+
 const body = document.querySelector('body');
 
 const options = { };
@@ -13,9 +15,11 @@ const obeserver = new IntersectionObserver(function(entries,obeserver){
     entries.forEach(entry => {
       if(entry.isIntersecting && entry.target == sectionOne){
         document.body.style.backgroundColor = "#550385";
+        nav_side.style.backgroundColor = "rgba(0,0,0,0)";       
               }
       if(entry.isIntersecting && entry.target == sectionTwo){
         document.body.style.backgroundColor = "#47026F";
+        nav_side.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
               }
       if(entry.isIntersecting && entry.target == sectionThree){
         document.body.style.backgroundColor = "#390259";
@@ -28,6 +32,7 @@ const obeserver = new IntersectionObserver(function(entries,obeserver){
               }
       if(entry.isIntersecting && entry.target == sectionSix){
         document.body.style.backgroundColor = "#0F0018";
+        nav_side.style.height = "10%";
               }
     })
 },options);
@@ -38,4 +43,6 @@ obeserver.observe(sectionFour);
 obeserver.observe(sectionThree);
 obeserver.observe(sectionTwo);
 obeserver.observe(sectionOne);
+
+// do an observer for side bar
 
