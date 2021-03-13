@@ -15,7 +15,7 @@ const obeserver = new IntersectionObserver(function(entries,obeserver){
     entries.forEach(entry => {
       if(entry.isIntersecting && entry.target == sectionOne){
         document.body.style.backgroundColor = "#550385";
-        nav_side.style.backgroundColor = "rgba(0,0,0,0)";       
+        nav_side.style.backgroundColor = "rgba(255,255,255,0)";       
               }
       if(entry.isIntersecting && entry.target == sectionTwo){
         document.body.style.backgroundColor = "#47026F";
@@ -32,9 +32,19 @@ const obeserver = new IntersectionObserver(function(entries,obeserver){
               }
       if(entry.isIntersecting && entry.target == sectionSix){
         document.body.style.backgroundColor = "#0F0018";
-        nav_side.style.height = "10%";
               }
     })
+},options);
+
+const nav_obs = new IntersectionObserver(function(entries,obeserver){
+  entries.forEach(entry => {
+    if(!entry.isIntersecting){
+      nav_side.style.height = "90%";       
+            }
+    else{
+      nav_side.style.height = "9%";
+    }
+  })
 },options);
 
 obeserver.observe(sectionSix);
@@ -44,5 +54,5 @@ obeserver.observe(sectionThree);
 obeserver.observe(sectionTwo);
 obeserver.observe(sectionOne);
 
-// do an observer for side bar
+nav_obs.observe(sectionSix);
 
