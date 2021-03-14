@@ -42,7 +42,7 @@ const nav_obs = new IntersectionObserver(function(entries,obeserver){
       nav_side.style.height = "90%";       
             }
     else{
-      nav_side.style.height = "9%";
+      nav_side.style.height = "90px";
     }
   })
 },options);
