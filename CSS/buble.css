@@ -3,8 +3,7 @@ div[class^="bubble-"] {
   width: 1px;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transform: translateX(-50%); }
+  border-radius: 50%; }
 
 .bubble-1 {
   bottom: 8px;
@@ -108,14 +107,15 @@ div[class^="bubble-"] {
 
 @keyframes bubble-movement {
   0% {
-    transform: translate3d(-50%, 0, 0);
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 1px;
-    width: 1px; }
+    transform: translate3d(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 0px;
+    width: 0px; }
+    
   100% {
-    transform: translate3d(-50%, -5000%, 0);
+    transform: translate3d(0, -500px, 0);
     background-color: rgba(255, 255, 255, 0);
-    height: 50px;
-    width: 50px; } }
+    height: 20px;
+    width: 20px; } }
 
 /*# sourceMappingURL=buble.css.map */
