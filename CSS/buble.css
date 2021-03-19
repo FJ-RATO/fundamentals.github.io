@@ -1,0 +1,121 @@
+div[class^="bubble-"] {
+  height: 1px;
+  width: 1px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translateX(-50%); }
+
+.bubble-1 {
+  bottom: 8px;
+  left: 5%;
+  animation: bubble-movement 5s infinite ease-in -0.02s; }
+
+.bubble-2 {
+  bottom: 9px;
+  left: 2%;
+  animation: bubble-movement 5s infinite ease-in -1.66s; }
+
+.bubble-3 {
+  bottom: 3px;
+  left: 57%;
+  animation: bubble-movement 5s infinite ease-in -1.12s; }
+
+.bubble-4 {
+  bottom: 7px;
+  left: 52%;
+  animation: bubble-movement 5s infinite ease-in -2.23s; }
+
+.bubble-5 {
+  bottom: 4px;
+  left: 3%;
+  animation: bubble-movement 5s infinite ease-in -1.7s; }
+
+.bubble-6 {
+  bottom: 7px;
+  left: 60%;
+  animation: bubble-movement 5s infinite ease-in -2.44s; }
+
+.bubble-7 {
+  bottom: 9px;
+  left: 16%;
+  animation: bubble-movement 5s infinite ease-in -0.04s; }
+
+.bubble-8 {
+  bottom: 9px;
+  left: 88%;
+  animation: bubble-movement 5s infinite ease-in -1.74s; }
+
+.bubble-9 {
+  bottom: 9px;
+  left: 86%;
+  animation: bubble-movement 5s infinite ease-in -0.46s; }
+
+.bubble-10 {
+  bottom: 7px;
+  left: 26%;
+  animation: bubble-movement 5s infinite ease-in -0.26s; }
+
+.bubble-11 {
+  bottom: 11px;
+  left: 16%;
+  animation: bubble-movement 3s infinite ease-in -2.37s; }
+
+.bubble-12 {
+  bottom: 3px;
+  left: 59%;
+  animation: bubble-movement 3s infinite ease-in -0.63s; }
+
+.bubble-13 {
+  bottom: 6px;
+  left: 43%;
+  animation: bubble-movement 3s infinite ease-in -2.24s; }
+
+.bubble-14 {
+  bottom: 8px;
+  left: 4%;
+  animation: bubble-movement 3s infinite ease-in -1.46s; }
+
+.bubble-15 {
+  bottom: 9px;
+  left: 13%;
+  animation: bubble-movement 3s infinite ease-in -1.53s; }
+
+.bubble-16 {
+  bottom: 2px;
+  left: 89%;
+  animation: bubble-movement 3s infinite ease-in -2.37s; }
+
+.bubble-17 {
+  bottom: 2px;
+  left: 26%;
+  animation: bubble-movement 3s infinite ease-in -2.59s; }
+
+.bubble-18 {
+  bottom: 11px;
+  left: 38%;
+  animation: bubble-movement 3s infinite ease-in -0.41s; }
+
+.bubble-19 {
+  bottom: 9px;
+  left: 30%;
+  animation: bubble-movement 3s infinite ease-in -1.09s; }
+
+.bubble-20 {
+  bottom: 6px;
+  left: 10%;
+  animation: bubble-movement 3s infinite ease-in -1.32s; }
+
+@keyframes bubble-movement {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 1px;
+    width: 1px; }
+  100% {
+    transform: translate3d(-50%, -5000%, 0);
+    background-color: rgba(255, 255, 255, 0);
+    height: 50px;
+    width: 50px; } }
+
+/*# sourceMappingURL=buble.css.map */
